@@ -24,8 +24,13 @@ repositories {
 }
 
 dependencies {
+
     implementation  'org.springframework.boot:spring-boot-starter-web'
-    implementation('org.projectlombok:lombok')
+    implementation  'org.projectlombok:lombok'
+    implementation  'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation  group: 'org.mariadb.jdbc', name: 'mariadb-java-client', version: '2.7.5'
+    implementation  'org.springframework.boot:spring-boot-starter-mustache'
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
 }
